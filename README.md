@@ -29,4 +29,5 @@ This is a mobile application built with **React Native** using **Expo**. The app
 - Local state management and AsyncStorage (for bookmarks)
 
 ---
+to start:
 npx expo start
