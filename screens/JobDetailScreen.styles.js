@@ -1,0 +1,107 @@
+import { StyleSheet } from "react-native";
+
+export default StyleSheet.create({
+  container: {
+    flexGrow: 1,
+    padding: 20,
+    backgroundColor: "#f4f6fa",
+  },
+  card: {
+    backgroundColor: "#fff",
+    borderRadius: 16,
+    padding: 20,
+    shadowColor: "#000",
+    shadowOffset: { width: 0, height: 4 },
+    shadowOpacity: 0.1,
+    shadowRadius: 6,
+    elevation: 4,
+  },
+  title: {
+    fontSize: 24,
+    fontWeight: "bold",
+    color: "#1c1c1e",
+    marginBottom: 10,
+  },
+  badgeContainer: {
+    flexDirection: "row",
+    flexWrap: "wrap",
+    gap: 8,
+    marginBottom: 16,
+  },
+  badge: {
+    backgroundColor: "#E7F3FE",
+    paddingHorizontal: 10,
+    paddingVertical: 4,
+    borderRadius: 20,
+  },
+  badgeText: {
+    color: "#0E56A8",
+    fontSize: 13,
+    fontWeight: "500",
+  },
+  row: {
+    flexDirection: "row",
+    alignItems: "center",
+    marginBottom: 10,
+    flexWrap: "wrap",
+  },
+  label: {
+    fontSize: 16,
+    fontWeight: "600",
+    color: "#444",
+    marginLeft: 4,
+    marginRight: 4,
+  },
+  value: {
+    fontSize: 16,
+    color: "#333",
+    flexShrink: 1,
+  },
+  divider: {
+    height: 1,
+    backgroundColor: "#e0e0e0",
+    marginVertical: 16,
+  },
+  descriptionTitle: {
+    fontSize: 18,
+    fontWeight: "600",
+    color: "#444",
+    marginBottom: 6,
+  },
+  descriptionText: {
+    fontSize: 15,
+    lineHeight: 22,
+    color: "#555",
+  },
+  actions: {
+    flexDirection: "row",
+    justifyContent: "space-between",
+    marginTop: 20,
+  },
+  chatBtn: {
+    flexDirection: "row",
+    backgroundColor: "#25D366",
+    paddingVertical: 12,
+    paddingHorizontal: 20,
+    borderRadius: 10,
+    flex: 0.48,
+    alignItems: "center",
+    justifyContent: "center",
+  },
+  callBtn: {
+    flexDirection: "row",
+    backgroundColor: "#ff9800",
+    paddingVertical: 12,
+    paddingHorizontal: 20,
+    borderRadius: 10,
+    flex: 0.48,
+    alignItems: "center",
+    justifyContent: "center",
+  },
+  btnText: {
+    color: "#fff",
+    marginLeft: 8,
+    fontWeight: "bold",
+    fontSize: 15,
+  },
+});
