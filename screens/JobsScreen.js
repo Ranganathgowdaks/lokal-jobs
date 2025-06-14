@@ -1,5 +1,11 @@
 import React, { useEffect, useRef, useState } from "react";
-import { FlatList, TouchableOpacity, Animated } from "react-native";
+import {
+  FlatList,
+  TouchableOpacity,
+  Animated,
+  View,
+  StyleSheet,
+} from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import { useDispatch, useSelector } from "react-redux";
 import { addBookmark, removeBookmark } from "../redux/bookmarksSlice";
@@ -8,7 +14,6 @@ import Loader from "../components/Loader";
 import Error from "../components/Error";
 import Empty from "../components/Empty";
 import { fetchJobs } from "../utils/api";
-import styles from "./JobDetailScreen.styles";
 
 export default function JobsScreen({ navigation }) {
   const [jobs, setJobs] = useState([]);
@@ -125,3 +130,16 @@ export default function JobsScreen({ navigation }) {
     </>
   );
 }
+
+const styles = StyleSheet.create({
+  scrollTopButton: {
+    position: "absolute",
+    bottom: 24,
+    right: 16,
+    backgroundColor: "#333",
+    padding: 12,
+    borderRadius: 30,
+    elevation: 5,
+    zIndex: 100,
+  },
+});
